@@ -1,11 +1,8 @@
 var express = require("express");
 var app = express();
+var cors = require('cors');
 var PORT = process.env.PORT || 8000;
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://loliscord.herokuapp.com");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+app.use(cors());
 app.get("/", (req, res, next) => {
   res.send("hello world");
 });
