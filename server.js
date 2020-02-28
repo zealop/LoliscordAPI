@@ -7,8 +7,9 @@ var server = http.createServer(app);
 var io  = require('socket.io').listen(server);
 
 //Disable cross origin block
-var cors = require('cors');
-app.use(cors());
+//var cors = require('cors');
+//app.use(cors());
+io.origins('*:*');
 
 server.listen(PORT, null, function() {
     console.log("Listening on port " + PORT);
