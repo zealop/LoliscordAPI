@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var PORT = process.env.PORT || 8000
 app.get("/url", (req, res, next) => {
-  res.json(["Tony", "Lisa", "Michael", "Ginger", "Food"]);
+  res.send("testtttttttt");
 });
 
 app.listen(PORT, () => {
