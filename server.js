@@ -1,5 +1,3 @@
-"use strict";
-exports.__esModule = true;
 var PORT = process.env.PORT || 8000;
 var express = require("express");
 var app = express();

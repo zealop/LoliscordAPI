@@ -1,5 +1,6 @@
 {
   "name": "loliscordapi",
+  "private": true,
   "version": "0.0.1",
   "description": "API for Loliscord app",
   "main": "server.js",
