@@ -5,8 +5,8 @@
   "description": "API for Loliscord app",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "prod": "node server.js"
+    "start": "node server.js",
+    "prod": "nodemon server.js"
   },
   "author": "Phong Tran",
   "license": "ISC",
